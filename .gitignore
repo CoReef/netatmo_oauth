@@ -1,0 +1,6 @@
+keys/
+out/
+
+*_stationsdata.json
+
+__pycache__
