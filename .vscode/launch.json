@@ -9,7 +9,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args" : [ "--file", "../keys/netatmo.json", "--path", "out" ],
+            "args" : [ "--file", "../keys/netatmo.json", "--path", "out/netatmo_token.json" ],
             "cwd" : "${workspaceFolder}"
         }
     ]
