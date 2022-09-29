@@ -9,7 +9,7 @@ from datetime import datetime
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 config = {
-    'host_ip' : '127.0.0.1',
+    'host_ip' : '10.42.1.102',
     'host_port' : 4344,
     'oauth2_ep' : "https://api.netatmo.com/oauth2/authorize",
     'token_ep' : "https://api.netatmo.com/oauth2/token"
@@ -139,7 +139,7 @@ def main():
     config['client_secret'] = auth_data['client_secret']
 
     print("netatmo_oauth started")
-    webServer = HTTPServer((config['host_ip'], config['host_port']), OAuth2Handler)
+    webServer = HTTPServer(('', config['host_port']), OAuth2Handler)
 
     try:
         webServer.serve_forever()
